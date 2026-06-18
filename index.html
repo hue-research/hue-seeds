@@ -46,7 +46,7 @@
       <p>北海道教育大学に蓄積された研究の知見を「研究シーズ（種）」として可視化し、研究者と自治体・企業・学校・地域をつなぐための全学プラットフォームです。研究分野やキーワードから、連携の可能性があるシーズを検索できます。</p>
     </div>
     <div class="intro-facts">
-      <div class="f-row"><span class="k">対象</span><span class="v">全学5キャンパス（札幌・旭川・釧路・函館・岩見沢）</span></div>
+      <div class="f-row"><span class="k">対象</span><span class="v">全学5校</span></div>
       <div class="f-row"><span class="k">掲載中</span><span class="v">5名（プロトタイプ）</span></div>
       <div class="f-row"><span class="k">更新日</span><span class="v">2026.06.17</span></div>
     </div>
@@ -60,32 +60,47 @@
       <div class="desc">分野を選択して「この分野で表示する」を押すと、下の研究者一覧が絞り込まれます。複数選択できます。</div>
     </div>
     <div class="field-panel">
-      <div class="field-grid" id="fieldGrid">
-        <label class="field-item" data-tag="edu">
-          <input type="checkbox" value="edu">
-          <span class="dot" style="background:#16284a"></span>
-          <span class="lb">教育イノベーション</span>
-        </label>
-        <label class="field-item" data-tag="ind">
-          <input type="checkbox" value="ind">
-          <span class="dot" style="background:#c2542f"></span>
-          <span class="lb">産学連携・地域協働</span>
-        </label>
-        <label class="field-item" data-tag="health">
-          <input type="checkbox" value="health">
-          <span class="dot" style="background:#2f8f5e"></span>
-          <span class="lb">健康・スポーツ科学</span>
-        </label>
-        <label class="field-item" data-tag="data">
-          <input type="checkbox" value="data">
-          <span class="dot" style="background:#5b4fc4"></span>
-          <span class="lb">データ・テクノロジー</span>
-        </label>
-        <label class="field-item" data-tag="outdoor">
-          <input type="checkbox" value="outdoor">
-          <span class="dot" style="background:#1c7d8c"></span>
-          <span class="lb">野外・環境教育</span>
-        </label>
+      <div class="field-groups" id="fieldGrid">
+        <div class="field-group">
+          <div class="fg-head"><span class="fg-dot" style="background:#16284a"></span>教育学・心理学</div>
+          <div class="field-grid">
+            <label class="field-item" data-tag="pedagogy"><input type="checkbox" value="pedagogy"><span class="dot" style="background:#16284a"></span><span class="lb">教育学・教育方法学</span></label>
+            <label class="field-item" data-tag="psych"><input type="checkbox" value="psych"><span class="dot" style="background:#16284a"></span><span class="lb">心理学・発達科学</span></label>
+            <label class="field-item" data-tag="specialneeds"><input type="checkbox" value="specialneeds"><span class="dot" style="background:#16284a"></span><span class="lb">特別支援教育・インクルーシブ教育</span></label>
+            <label class="field-item" data-tag="remote"><input type="checkbox" value="remote"><span class="dot" style="background:#16284a"></span><span class="lb">へき地・地域教育学</span></label>
+          </div>
+        </div>
+        <div class="field-group">
+          <div class="fg-head"><span class="fg-dot" style="background:#5b4fc4"></span>教科教育学</div>
+          <div class="field-grid">
+            <label class="field-item" data-tag="humanities"><input type="checkbox" value="humanities"><span class="dot" style="background:#5b4fc4"></span><span class="lb">言語・人文系教科教育</span></label>
+            <label class="field-item" data-tag="stem"><input type="checkbox" value="stem"><span class="dot" style="background:#5b4fc4"></span><span class="lb">理数・情報系教科教育</span></label>
+            <label class="field-item" data-tag="arts_edu"><input type="checkbox" value="arts_edu"><span class="dot" style="background:#5b4fc4"></span><span class="lb">芸術・技能系教科教育</span></label>
+          </div>
+        </div>
+        <div class="field-group">
+          <div class="fg-head"><span class="fg-dot" style="background:#2f8f5e"></span>健康・身体科学</div>
+          <div class="field-grid">
+            <label class="field-item" data-tag="health"><input type="checkbox" value="health"><span class="dot" style="background:#2f8f5e"></span><span class="lb">健康科学・スポーツ科学</span></label>
+            <label class="field-item" data-tag="biomech"><input type="checkbox" value="biomech"><span class="dot" style="background:#2f8f5e"></span><span class="lb">バイオメカニクス・身体運動科学</span></label>
+          </div>
+        </div>
+        <div class="field-group">
+          <div class="fg-head"><span class="fg-dot" style="background:#1c7d8c"></span>データ・テクノロジー</div>
+          <div class="field-grid">
+            <label class="field-item" data-tag="data"><input type="checkbox" value="data"><span class="dot" style="background:#1c7d8c"></span><span class="lb">データサイエンス・情報学</span></label>
+            <label class="field-item" data-tag="edtech"><input type="checkbox" value="edtech"><span class="dot" style="background:#1c7d8c"></span><span class="lb">教育工学・EdTech</span></label>
+          </div>
+        </div>
+        <div class="field-group">
+          <div class="fg-head"><span class="fg-dot" style="background:#c2542f"></span>環境・地域・国際</div>
+          <div class="field-grid">
+            <label class="field-item" data-tag="outdoor"><input type="checkbox" value="outdoor"><span class="dot" style="background:#c2542f"></span><span class="lb">環境科学・野外教育学</span></label>
+            <label class="field-item" data-tag="policy"><input type="checkbox" value="policy"><span class="dot" style="background:#c2542f"></span><span class="lb">地域社会学・政策科学</span></label>
+            <label class="field-item" data-tag="lifelong"><input type="checkbox" value="lifelong"><span class="dot" style="background:#c2542f"></span><span class="lb">生涯学習・社会教育学</span></label>
+            <label class="field-item" data-tag="intl"><input type="checkbox" value="intl"><span class="dot" style="background:#c2542f"></span><span class="lb">国際教育学・多文化共生</span></label>
+          </div>
+        </div>
       </div>
       <div class="field-actions">
         <button class="btn btn-primary" id="applyFilter">この分野で表示する</button>
@@ -140,15 +155,15 @@
     </div>
     <div class="r-list" id="rList">
 
-      <a class="r-row" data-tags="ind,data" href="suzuki.html">
+      <a class="r-row" data-tags="data,policy" href="suzuki.html">
         <div class="ph"><img src="assets/suzuki.jpg" alt="鈴木 哲平"></div>
         <div class="info">
           <div class="top"><span class="name">鈴木 哲平</span><span class="role">教授</span></div>
           <div class="affil">岩見沢校／芸術・スポーツビジネス専攻</div>
           <div class="theme">健康・教育・政策のデータ駆動型高度化に関する研究</div>
           <div class="tags">
-            <span class="r-tag"><span class="dot" style="background:#c2542f"></span>産学連携・地域協働</span>
-            <span class="r-tag"><span class="dot" style="background:#5b4fc4"></span>データ・テクノロジー</span>
+            <span class="r-tag"><span class="dot" style="background:#1c7d8c"></span>データサイエンス・情報学</span>
+            <span class="r-tag"><span class="dot" style="background:#c2542f"></span>地域社会学・政策科学</span>
           </div>
         </div>
         <div class="go">詳細 →</div>
@@ -161,50 +176,50 @@
           <div class="affil">岩見沢校／スポーツ文化専攻</div>
           <div class="theme">自然環境を活用した野外・森林教育プログラムの開発と指導者育成</div>
           <div class="tags">
-            <span class="r-tag"><span class="dot" style="background:#1c7d8c"></span>野外・環境教育</span>
-            <span class="r-tag"><span class="dot" style="background:#2f8f5e"></span>健康・スポーツ科学</span>
+            <span class="r-tag"><span class="dot" style="background:#c2542f"></span>環境科学・野外教育学</span>
+            <span class="r-tag"><span class="dot" style="background:#2f8f5e"></span>健康科学・スポーツ科学</span>
           </div>
         </div>
         <div class="go">詳細 →</div>
       </a>
 
-      <a class="r-row" data-tags="health,data" href="kobayashi.html">
+      <a class="r-row" data-tags="biomech,data" href="kobayashi.html">
         <div class="ph"><img src="assets/kobayashi.jpg" alt="小林 育斗"></div>
         <div class="info">
           <div class="top"><span class="name">小林 育斗</span><span class="role">准教授</span></div>
           <div class="affil">岩見沢校／スポーツ文化専攻</div>
           <div class="theme">バイオメカニクス手法を用いた運動発達と身体運動の研究</div>
           <div class="tags">
-            <span class="r-tag"><span class="dot" style="background:#2f8f5e"></span>健康・スポーツ科学</span>
-            <span class="r-tag"><span class="dot" style="background:#5b4fc4"></span>データ・テクノロジー</span>
+            <span class="r-tag"><span class="dot" style="background:#2f8f5e"></span>バイオメカニクス・身体運動科学</span>
+            <span class="r-tag"><span class="dot" style="background:#1c7d8c"></span>データサイエンス・情報学</span>
           </div>
         </div>
         <div class="go">詳細 →</div>
       </a>
 
-      <a class="r-row" data-tags="health,edu" href="morita.html">
+      <a class="r-row" data-tags="health,psych" href="morita.html">
         <div class="ph"><img src="assets/morita.jpg" alt="森田 憲輝"></div>
         <div class="info">
           <div class="top"><span class="name">森田 憲輝</span><span class="role">教授／副学長</span></div>
           <div class="affil">岩見沢校／保健体育</div>
           <div class="theme">子どもにおける運動・体力と認知機能・学力との関係</div>
           <div class="tags">
-            <span class="r-tag"><span class="dot" style="background:#2f8f5e"></span>健康・スポーツ科学</span>
-            <span class="r-tag"><span class="dot" style="background:#16284a"></span>教育イノベーション</span>
+            <span class="r-tag"><span class="dot" style="background:#2f8f5e"></span>健康科学・スポーツ科学</span>
+            <span class="r-tag"><span class="dot" style="background:#16284a"></span>心理学・発達科学</span>
           </div>
         </div>
         <div class="go">詳細 →</div>
       </a>
 
-      <a class="r-row" data-tags="edu,data" href="sato.html">
+      <a class="r-row" data-tags="edtech,pedagogy" href="sato.html">
         <div class="ph"><img src="assets/sato.jpg" alt="佐藤 正範"></div>
         <div class="info">
           <div class="top"><span class="name">佐藤 正範</span><span class="role">講師／副センター長</span></div>
           <div class="affil">札幌校／未来の学び協創研究センター</div>
           <div class="theme">学習ログとEdTechで実現する個別最適で協働的な学び</div>
           <div class="tags">
-            <span class="r-tag"><span class="dot" style="background:#16284a"></span>教育イノベーション</span>
-            <span class="r-tag"><span class="dot" style="background:#5b4fc4"></span>データ・テクノロジー</span>
+            <span class="r-tag"><span class="dot" style="background:#1c7d8c"></span>教育工学・EdTech</span>
+            <span class="r-tag"><span class="dot" style="background:#16284a"></span>教育学・教育方法学</span>
           </div>
         </div>
         <div class="go">詳細 →</div>
